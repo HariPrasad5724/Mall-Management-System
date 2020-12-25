@@ -122,7 +122,7 @@ int main()
         cout<<"\n--------------------------------------------------------------------------------------------------------";
         cout<<"\n\t\tSHOP DETAILS";
         cout<<"\n--------------------------------------------------------------------------------------------------------";
-        cout<<"\n\t1.ADD NEW SHOP DETAILS\n\t2.DISPLAY\n\t3.DELETE\n\t4.UPDATE\n\t5.Total Rent\n\t6.Find Shop Details\n\t7.No Of Free Shops\n\t8.EXIT";
+        cout<<"\n\t1.ADD NEW SHOP DETAILS\n\t2.DISPLAY AVAILABLE SHOPS\n\t3.DELETE A SHOP\n\t4.UPDATE A SHOP\n\t5.TOTAL RENT OF SHOPS\n\t6.SEARCH A SHOP DETAILs\n\t7.AVAILABLE FREE SHOPS \n\t8.EXIT";
         cout<<"\n--------------------------------------------------------------------------------------------------------";
         cout<<"\nEnter your option.....";
         cin>>option;
@@ -167,7 +167,7 @@ int main()
                 int b;
                 ofstream c("s1.dat",ios::out|ios::app);
                 a.open("s.dat",ios::in|ios::out);
-                cout<<"\n\n\t\tWHICH EMPLOYEE YOU WANT TO DELETE(ID) : ";
+                cout<<"\n\n\t\tID OF THE SHOP YOU WANT TO DELETE : ";
                 cin>>b;
                 a.seekg(0,ios::beg);
                 while(a.read((char*)&obj1,sizeof(obj1)))
